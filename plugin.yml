@@ -1,0 +1,24 @@
+name: CatStats
+version: 1.16-1
+author: ThiccCat
+main: me.thicccat.catstats.Main
+description: Stat collecting plugin.
+api-version: 1.16
+
+commands:
+  blocksmined:
+    description: Displays the number of blocks the user has mined.
+    permission: catx.blocksmined
+    usage: /blocksmined <player> <block_name>
+  catstats:
+    description: Main command.
+    permission: catstats.main
+    usage: /catstats
+permissions:
+  catstats.*:
+    default: op
+    description: Gives access to all commands.
+    children:
+      catstats.main: true
+      catstats.blocksmined: true
+      catstats.update: true
