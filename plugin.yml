@@ -8,7 +8,7 @@ api-version: 1.16
 commands:
   blocksmined:
     description: Displays the number of blocks the user has mined.
-    permission: catx.blocksmined
+    permission: catstats.blocksmined
     usage: /blocksmined <player> <block_name>
   catstats:
     description: Main command.
@@ -22,3 +22,6 @@ permissions:
       catstats.main: true
       catstats.blocksmined: true
       catstats.update: true
+  catstats.main:
+    description: Shows information about the plugin.
+    default: true

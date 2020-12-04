@@ -25,7 +25,7 @@ public class CatStats implements CommandExecutor {
 				return true;
 			}
 			Player p = (Player) sender;
-			if (p.hasPermission("catx.catstats")) {
+			if (p.hasPermission("catstats.main")) {
 				p.sendMessage(ChatColor.AQUA + "Running " + ChatColor.DARK_AQUA + "CatStats v1.16-1 " + ChatColor.AQUA + "by " + ChatColor.DARK_AQUA + "ThiccCat.");	
 				return true;
 			} else {

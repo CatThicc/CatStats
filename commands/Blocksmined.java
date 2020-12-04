@@ -61,7 +61,7 @@ public class Blocksmined implements CommandExecutor {
 				return true;
 			}
 			Player p = (Player) sender;
-			if (p.hasPermission("catx.blocksmined")) {
+			if (p.hasPermission("catstats.blocksmined")) {
 				if (args.length == 0) {
 					p.sendMessage(ChatColor.GRAY + "Usage: /blocksmined <player> <block_name>");
 				} else {
